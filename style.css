@@ -1,0 +1,549 @@
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(Fonts/Montserrat-Medium.ttf);
+}
+
+* {
+    font-family: Montserrat-Medium;
+    margin: 0;
+    padding: 0;
+    /* color: black; */
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    padding: 10px 15px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    height: 75px;
+    display: flex;
+}
+
+.platform {
+    margin-right: auto;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.navigationBar {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    list-style-type: none;
+}
+
+.navigationBar a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigationBar li {
+    padding: 10px 12.5px 0;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.navigationBar li:hover{
+    background-color: #00c6ff;
+}
+
+.headerButtonContainer{
+    margin-left: auto;
+    gap: 15px;
+}
+
+.signInButton{
+    padding: 12.5px;
+    height: 50px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.signInButton:hover{
+    background-color: #00c6ff;
+}
+
+.blocksButton {
+    padding: 12.5px;
+    height: 50px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.blocksButton:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about {
+    margin-top: 100px;
+    margin-left: 100px;
+    gap: 150px;
+}
+
+.aboutInfo{
+    width: 500px;
+}
+
+.aboutWelcome {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.aboutDescription {
+    margin-bottom: 15px;
+    color: gray;
+    font-size: 1.125rem;
+}
+
+.aboutLabel{
+    margin-bottom: 15px;
+}
+
+.aboutInput {
+    padding: 0 12.5px;
+    margin-right: 20px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    width: 300px;
+}
+.offerButton {
+    padding: 12.5px;
+    width: 175px;
+    height: 50px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.offerButton:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+::placeholder{
+    font-family: Montserrat-Medium;
+    font-size: 1rem;
+}
+
+.aboutImage img{
+    width: 640px;
+    height: 576px;
+    border-radius: 10px;
+}
+
+.skillsLabel{
+    text-align: center;
+    display: block;
+    width: 175px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 2.5px solid #00c6ff ;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+.skillsContainer li{
+    list-style: none;
+    width: 1000px;
+    font-size: 1.25rem;
+    background: #00c6ff10;
+    padding: 15px 25px;
+    border-left: 5px solid #00c6ff;
+    border-radius: 5px;
+}
+
+.skillsContainer{
+    display: grid;
+    margin: auto;
+    gap: 20px;
+}
+
+.projectsLabel {
+    text-align: center;
+    display: block;
+    width: 250px;
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2.5px solid #00c6ff ;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+.projectsContainer{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    column-gap: 75px;
+    row-gap: 25px;
+}
+
+.projectImg{
+    width: 500px;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 2.5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.projectInfo{
+    height: 290px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2.5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.projectInfoLabel{
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 15px;
+}
+
+.projectInfoDescription{
+    font-size: 1.25rem;
+    padding-bottom: 50px;
+}
+
+.projectButton{
+    margin-left: 135px;
+    width: 200px;
+    height: 50px;
+    padding: 12.5px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.projectButton:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.projectInfo2Description {
+    font-size: 1rem;
+    padding-bottom: 50px;
+}
+
+.resume{
+    margin-top: 200px;
+}
+
+.resumeInfo {
+    width: 550px;
+    margin-left: 100px;
+}
+
+.resumeInfoLabel{
+    font-weight: 700;
+    font-size: 2.5rem;
+    width: 250px;
+    text-align: center;
+    border-bottom: 2.5px solid #00c6ff;
+    margin-bottom: 25px;
+    padding-bottom: 7.5px;
+}
+
+.resumeInfoDescription{
+    color: rgb(90, 90, 90);
+    margin-bottom: 15px;
+}
+
+.resumeInfoButton {
+    width: 150px;
+    height: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    vertical-align: middle;
+    font-weight: 800;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.resumeInfoButton svg{
+    height: 20px;
+    width: 20px;
+    margin-left: 15px;
+}
+
+.resumeInfoButton:hover{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.resumeContainer {
+    display: grid;
+    grid-template-columns: 50px 325px;
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-left: 300px;
+}
+
+.resumeLogo{
+    background-color: black;
+    border-radius: 10px;
+}
+
+.resumeLogo svg{
+    color: #00c6ff;
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.resumeDescription{
+    color: gray;
+}
+
+.contact{
+    margin-top: 100px;
+}
+
+.contactLabel{
+    font-weight: 700;
+    font-size: 2.5rem;
+    width: 250px;
+    text-align: center;
+    border-bottom: 2.5px solid #00c6ff;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+.contactDescription {
+    display: block;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 75px;
+    text-align: center;
+    font-size: 1.125rem;
+    color: gray;
+    width: 450px;
+}
+
+.form {
+    border: 2.5px solid #00c6ff;
+    border-radius: 10px;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 200px;
+    padding: 25px;
+    box-shadow: 1.25px 2.5px 2.5px rgba(128, 128, 128, 0.5);
+}
+
+.formContact{
+    background-color: #212121;
+    color: white;
+    border-radius: 10px;
+    padding: 65px;
+}
+
+.formContactLabel{
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.formContactDescription{
+    color: rgb(150, 150, 150);
+    margin-bottom: 50px;
+}
+
+.formContactContainer{
+    display: grid;
+    grid-template-columns: 25px auto;
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+.formContactContainer i{
+    height: 25px;
+    padding-top: 2.5px;
+}
+
+.formInfoName{
+    margin-left: 75px;
+    margin-bottom: 25px;
+    gap: 25px;
+}
+
+.formInfo label{
+    color: #0072ff;
+    padding-bottom: 15px;
+}
+
+.formInfo input[type=text] {
+    border-bottom: 2.5px solid #00c6ff;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    padding: 5px 5px 7.5px;
+    transition: border-color 0.25s;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.formInfo input[type=text]:focus {
+    border-bottom: 2.5px solid #0072ff;
+}
+
+::placeholder {
+    color: gray;
+    font-size: 1rem;
+}
+
+input[name="firstName"], input[name="lastName"] {
+    width: 250px;
+    max-width: 250px;
+}
+
+.formInfoEmail{
+    width: 545px;
+    margin-left: 75px;
+    margin-bottom: 25px;
+}
+
+.formInfoInterested{
+    width: 545px;
+    margin-left: 75px;
+    margin-bottom: 25px;
+}
+
+.formInfoInterestedQuestion {
+    color: #0072ff;
+    padding-bottom: 15px;
+}
+
+.formInfoInterested label{
+    color: black;
+    padding: 0px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #0072ff;
+}
+
+.formInfoMessage{
+    width: 545px;
+    margin-left: 75px;
+    margin-bottom: 25px;
+}
+
+input[name="message"] {
+    height: 100px;
+}
+
+.formInfoButton {
+    margin-left: 450px;
+    height: 50px;
+    padding: 12.5px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.formInfoButton:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    height: 50px;
+}
+
+.footerCopyright{
+    height: 25px;
+    margin-top: 25px;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footerContainer {
+    margin-left: auto;
+    list-style: none;
+    gap: 25px;
+}
+
+.footerContainer li{
+    height: 25px;
+    margin-top: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.25s;
+    cursor: pointer;
+}
+
+.footerContainer li:hover{
+    color: gray;
+}
+
+.footerButton {
+    height: 40px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.footerButton:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
